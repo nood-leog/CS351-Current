@@ -1,0 +1,33 @@
+header {
+    font-family: sans-serif;
+    text-indent: 25px;
+    img{
+        float:left;
+        width:100px;
+    }
+    h2 {
+        color: #fe4d5b;
+        font-style: italic;
+        text-shadow: 1px 1px;
+        font-size: 200%;
+    }
+    h3{
+        font-size: 125%;
+    }
+}
+body{
+    font-family: sans-serif;
+    h1{
+        font-size: 150%;
+        span{
+            font-size:200%
+        }
+    }
+}
+
+footer{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 90%;
+    color: grey;
+}
