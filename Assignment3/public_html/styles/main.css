@@ -1,63 +1,66 @@
-
 body{
-    background: url("/images/guitarWallPaper.jpg");
-}
+    background-image: url("guitarWallPaper-1.jpg");
 
-html, body{
-    
-    width: 800px;
-    border: 2px solid black;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-    
-    font-family: sans-serif;
-    header {
-        text-indent: 25px;
-        img{
-            float:left;
-            width:80px;
-        }
-        h2 {
-            color: #fe4d5b;
-            font-style: italic;
-            text-shadow: 1px 1px black;
-            text-indent: 25px;
-            font-size: 200%;
-        }
-        h3{
-            font-size: 125%
-        }
-    }
-    h1{
-        font-size: 150%;
-        span{
-            font-size:200%
-        }
-    }
-    h2{
-        font-size: 125%
-    }
-    h3{
-        font-size: 110%
-    }
+    div.container{
+        width: 800px;
+        margin: 0 auto;
+        background: white;
 
-    ul{
-        line-height: 1.5;
-        a:link{
-            color:#9b59b6;
-        }
-        a:visited{
-            color:#12395b;
-        }
-        a:hover{
-            color:#2880b9;
-        }
-    }
-    
-    footer{
+        border: 2px solid black;
+        box-shadow: 10px 10px 5px lightcoral, -10px 10px 5px lightcoral;
+
         font-family: sans-serif;
-        text-align: center;
-        font-size: 90%;
-        color: grey;
+        div.heading{
+            header {
+                text-indent: 25px;
+                img{
+                    float:left;
+                    width:80px;
+                }
+                h2 {
+                    text-indent: 25px;
+                    font-size: 200%;
+                }
+                h3{
+                    font-size: 125%
+                }
+            }
+        }
+        div.main{
+            h1{
+                font-size: 150%;
+                span{
+                    font-size:200%
+                }
+            }
+            h2{
+                font-size: 125%
+            }
+            h3{
+                font-size: 110%
+            }
+
+            ul{
+                line-height: 1.5;
+                a:link{
+                    color:#9b59b6;
+                }
+                a:visited{
+                    color:#12395b;
+                }
+                a:hover{
+                    color:#2880b9;
+                }
+            }
+        }
+        div.footing{
+            footer{
+                font-family: sans-serif;
+                text-align: center;
+                border: 2px solid black;
+                font-size: 90%;
+                color: grey;
+            }
+        }
     }
 }
