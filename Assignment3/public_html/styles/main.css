@@ -2,55 +2,62 @@ body{
     background-image: url("guitarWallPaper-1.jpg");
 
     div{
+        .column {
+            float: left;
+            width: 50%;
+        }
+
         width: 800px;
         margin: 0 auto;
         background: white;
 
-        border: 2px solid;
+        border-style: none solid solid solid;
         box-shadow: 10px 10px 5px lightcoral, -10px 10px 5px lightcoral;
 
         font-family: sans-serif;
 
         header {
-            text-indent: 25px;
+
             img{
                 float:left;
                 width:80px;
             }
             h2 {
-                text-indent: 25px;
+
                 font-size: 200%;
             }
             h3{
-                font-size: 125%
+                font-size: 125%;
+                text-indent: 25px;
             }
+            background: linear-gradient(45deg, white 0%, lightcoral 25%, black 100%);
+            border: 2px black;
+            border-style: none none solid none ;
         }
 
-        div{
-            h1{
-                font-size: 150%;
-            }
-            h1::first-letter{
-                font-size:200%
-            }
-            h2{
-                font-size: 125%
-            }
-            h3{
-                font-size: 110%
-            }
+        h1{
+            font-size: 150%;
+        }
+        h1::first-letter{
+            font-size:200%
+        }
+        h2{
+            font-size: 125%
+        }
+        h3{
+            font-size: 110%
+        }
 
-            ul{
-                line-height: 1.5;
-                a:link{
-                    color:#9b59b6;
-                }
-                a:visited{
-                    color:#12395b;
-                }
-                a:hover{
-                    color:#2880b9;
-                }
+        ul{
+            line-height: 1.5;
+            a:link{
+                color:#9b59b6;
+            }
+            a:visited{
+                color:#12395b;
+            }
+            a:hover{
+                color:#2880b9;
             }
         }
 
