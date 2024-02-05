@@ -1,4 +1,5 @@
 //shipping.js
+"use strict";
 
 // Define the $() function
 function $(selector) {
