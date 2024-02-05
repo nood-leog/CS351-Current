@@ -1,7 +1,17 @@
 //date.js
 "use strict";
 
-const $ = selector => document.querySelector(selector);
-
-const d = new Date();
-document.getElementById("currentDate").innerHTML = d;
+document.addEventListener("DOMContentLoaded", () => 
+{
+    // Add current date to the footer
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString("en-US", 
+    {
+        month: "2-digit",
+        day: "2-digit",
+        year: "numeric"
+    });
+   
+   
+    document.getElementById('currentDate').textContent = formattedDate;
+});

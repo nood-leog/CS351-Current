@@ -167,16 +167,22 @@ section img{
 }
 
 /* the styles for the footer */
-footer{
+footer {
     clear: both;
-    line-height: 5px;
     padding: 15px;
-    text-align: center;
     border-top:2px solid black;
     font-size: 90%;
     color: black;
     background: linear-gradient(45deg, black 0%, lightcoral 25%, white 100%);
 }
 
+footer p {
+    line-height: 5px; 
+    text-align: center;
+    padding-left: 97px;
+}
 
-
+footer span{
+    float: right;
+    padding-right: 25px;
+}
