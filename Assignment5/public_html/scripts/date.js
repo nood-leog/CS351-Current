@@ -3,7 +3,6 @@
 
 document.addEventListener("DOMContentLoaded", () => 
 {
-    // Add current date to the footer
     const currentDate = new Date();
     const formattedDate = currentDate.toLocaleDateString("en-US", 
     {
@@ -11,7 +10,5 @@ document.addEventListener("DOMContentLoaded", () =>
         day: "2-digit",
         year: "numeric"
     });
-   
-   
     document.getElementById('currentDate').textContent = formattedDate;
 });
