@@ -1,0 +1,15 @@
+/*Guitar product style sheet*/
+
+/*support style sheet*/
+
+section {
+    display: block;
+    list-style-type: none;
+}
+section h1 {
+    font-size: 150%;
+}
+
+section h1::first-letter{
+    font-size:100%;
+}
