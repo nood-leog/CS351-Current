@@ -1,0 +1,14 @@
+/*Guitar product style sheet*/
+
+section h1 {
+    margin-left: 0;
+    font-size: 150%;
+}
+
+section h1::first-letter{
+    font-size:100%;
+}
+section h2
+{
+   margin-left: 0;  
+}
