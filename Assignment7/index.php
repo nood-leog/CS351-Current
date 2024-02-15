@@ -4,7 +4,7 @@
 
 <html lang="en">
     <head>
-        <title> Assignment 7 Alex Boyce, and a test to see if git works</title>
+        <title> Assignment 7 Alex Boyce, and yes, git works now</title>
         <link rel="stylesheet" href=./styles/main.css>
         <script src="./scripts/date.js"></script>
     </head>
