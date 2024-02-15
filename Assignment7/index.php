@@ -4,7 +4,7 @@
 
 <html lang="en">
     <head>
-        <title> Assignment 7 Alex Boyce, and a last push test/title>
+        <title> Assignment 7 Alex Boyce, and a last pull test/title>
         <link rel="stylesheet" href=./styles/main.css>
         <script src="./scripts/date.js"></script>
     </head>
