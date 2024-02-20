@@ -1,7 +1,15 @@
 <?php
+    // connect to the my_guitar_shop database
+    $dsn = 'mysql:host=localhost;dbname=my_guitar_shop';
+    $username = 'CS351user';
+    $password = '';
+    $db = new PDO($dsn, $username, $password);
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+    // get all categories from the my_guitar_shop database
+    $query = 'SELECT * FROM categories
+              ORDER BY category_id';
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $categories = $statement->fetchAll();
+    $statement->closeCursor();
+?>

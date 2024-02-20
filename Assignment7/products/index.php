@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 
-<!--Under Construction index-->
+<!--Product index-->
 <html>
-    <head>
-        <title>Under Construction</title>
-    </head>
+<head>
+    <title>Products</title>
     
-    <body>
-        <header>
-            <h1>Under Construction</h1>
-            <a href="../index.php">Back to home</a>
-            <p><img src="../images/UnderCon.png" alt="Under Construction Image"></p>
-        </header>
-    </body>
+</head>
+<body>
+    <header><h1>Product page test</h1></header>
+    <main>
+        <h3>If this project connects to the database successfully, you should see a list of product categories below</h3>
+
+
+        <!-- display a list of categories -->
+        <h3>Categories</h3>
+        <ul>
+            <?php foreach ($categories as $category) : ?>
+            <li><?php echo $category['category_name']; ?></li>
+            <?php endforeach; ?>
+        </ul>
+
+    </main>
+</body>
 </html>
