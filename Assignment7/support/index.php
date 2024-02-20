@@ -8,6 +8,7 @@
         
         <link rel="stylesheet" href=../styles/support.css>
         <script src="../scripts/support.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         
         <script src="../scripts/date.js"></script>
     </head>
