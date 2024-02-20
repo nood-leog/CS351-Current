@@ -18,15 +18,15 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="lessons/index.php">Lessons</a></li>
+                <li><a href="index.php">Lessons</a></li>
                 <li><a href="products/index.php">Products</a></li>
                 <li><a href="support/index.php">Support</a></li>
                 <li><a href="shipping/index.php">Shipping</a></li>
-                <li><a href="contact/index.php">Contact Us</a>
+                <li><a href="index.php">Contact Us</a>
                     <ul>
-                        <li><a href="contact/email/index.php">Email</a></li>
-                        <li><a href="contact/phone/index.php">Phone</a></li>
-                        <li><a href="contact/livechat/index.php">Live Chat</a></li>
+                        <li><a href="index.php">Email</a></li>
+                        <li><a href="index.php">Phone</a></li>
+                        <li><a href="index.php">Live Chat</a></li>
                     </ul>
                 </li>
             </ul>
@@ -39,9 +39,9 @@
                 <p>For expert advice, you can call us at 855-770-3373 or click the Live Chat button and an associate will be right with you.</p>
 
                 <h2>Featured Product</h2>
-                <a href="products/drums/ludwig.php"><img src="./images/LudwigDrumSet.png" alt="Ludwig Drum Set"></a>
+                <a href="index.php"><img src="./images/LudwigDrumSet.png" alt="Ludwig Drum Set"></a>
 
-                <h3><a href="products/drums/ludwig.php">Ludwig Element Evolution 5-piece Drum Set - Red Sparkle Finish</a></h3>
+                <h3><a href="index.php">Ludwig Element Evolution 5-piece Drum Set - Red Sparkle Finish</a></h3>
 
                 <h3>Our guarantee</h3>
                 <p>If you aren't completely satisfied with anything you buy from our store, you can return it for a full refund.<b> No questions asked! </b></p>
@@ -50,9 +50,9 @@
             <aside>
                 <ul>
                     <li><a href="products/guitars/index.php">Guitars</a></li>
-                    <li><a href="products/basses/index.php">Basses</a></li>
-                    <li><a href="products/drums/index.php">Drums</a></li>
-                    <li><a href="products/keyboards/index.php">Keyboards</a></li>
+                    <li><a href="index.php">Basses</a></li>
+                    <li><a href="index.php">Drums</a></li>
+                    <li><a href="index.php">Keyboards</a></li>
                 </ul>
             </aside> 
         </main>
