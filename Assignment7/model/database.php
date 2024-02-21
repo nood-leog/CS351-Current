@@ -1,7 +1,7 @@
 <?php
 //database.php
     $dsn = 'mysql:host=localhost;dbname=my_guitar_shop';
-    $username = 'root';
+    $username = 'CS351user';
     $password = '';
 
     try {

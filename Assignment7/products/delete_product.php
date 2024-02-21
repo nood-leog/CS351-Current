@@ -9,8 +9,8 @@
     <body>
         <header>
             <h1>Under Construction</h1>
-            <a href="../../index.php">Back to home</a>
-            <p><img src="../../images/UnderCon.png" alt="Under Construction Image"></p>
+            <a href="../index.php">Back to home</a>
+            <p><img src="../images/UnderCon.png" alt="Under Construction Image"></p>
         </header>
     </body>
 </html>

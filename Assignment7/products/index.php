@@ -14,14 +14,12 @@
         <?php
         require_once('../model/database.php');
 
-// Fetch categories
         $query = 'SELECT * FROM categories';
         $statement = $db->prepare($query);
         $statement->execute();
         $categories = $statement->fetchAll();
         $statement->closeCursor();
 
-// Fetch products for the selected category
         $category_id = isset($_GET['category_id']) ? $_GET['category_id'] : 1; // Default category ID
         $query = 'SELECT * FROM products WHERE category_id = :category_id';
         $statement = $db->prepare($query);
@@ -56,40 +54,41 @@
         <main>
             <section>
                 <h1>Product List</h1>
-                <h2>Categories</h2>
-                <nav>
-                    <ul>
+                <form method="get">
+                    <select name="category_id" id="category">
                         <?php foreach ($categories as $category) : ?>
-                            <li><a href="?category_id=<?php echo $category['category_id']; ?>">
-                                    <?php echo $category['category_id']; ?>
-                                </a>
-                            </li>
+                            <option value="<?php echo $category['category_id']; ?>" <?php echo ($category_id == $category['category_id']) ? 'selected' : ''; ?>>
+                                <?php echo $category['category_name']; ?>
+                            </option>
                         <?php endforeach; ?>
-                    </ul>
-                </nav>
+                    </select>
+                    <span>&lt;===</span>
+                    <input type="submit" value="Choose">
+                </form>
 
-                <h2><?php echo $product_id; ?></h2>
+                <?php if ($category_id) : ?>
+                    <?php
+                    $selectedCategory = array_filter($categories, function ($cat) use ($category_id) {
+                        return $cat['category_id'] == $category_id;
+                    });
+                    ?>
+                    <h2><?php echo reset($selectedCategory)['category_name']; ?></h2>
+                <?php endif; ?>
+
                 <table>
                     <tr>
-                        <th>Code</th>
+                        <th>Product ID</th>
                         <th>Name</th>
                         <th class="right">Price</th>
                         <th>&nbsp;</th>
                     </tr>
-
                     <?php foreach ($products as $product) : ?>
                         <tr>
-                            <td><?php echo $product['productCode']; ?></td>
-                            <td><?php echo $product['productName']; ?></td>
-                            <td class="right"><?php echo $product['listPrice']; ?></td>
-                            <td>
-                                <a href="../products/edit_product.php?product_id=<?php echo $product['product_id']; ?>">Edit</a>
-                                <form action="../products/delete_product.php" method="post" style="display: inline;">
-                                    <input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>">
-                                    <input type="hidden" name="category_id" value="<?php echo $product['category_id']; ?>">
-                                    <input type="submit" value="Delete">
-                                </form>
-                            </td>
+                            <td><?php echo $product['product_id']; ?></td>
+                            <td><?php echo $product['product_name']; ?></td>
+                            <td class="right"><?php echo $product['list_price']; ?></td>
+                            <td><a href="../products/edit_product.php"><button>Edit</button></td>  
+                            <td><a href="../products/delete_product.php"><button>Delete</button></td>  
                         </tr>
                     <?php endforeach; ?>
                 </table>
