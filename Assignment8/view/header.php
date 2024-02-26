@@ -1,7 +1,7 @@
-<?php
+<!DOCTYPE html>
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+<header>
+    <img src="./images/FenderStratocaster.png" alt="Fender Stratocaster">
+    <h2>The Guitar Store</h2>
+    <h3>For rock stars everywhere!</h3>    
+</header>
