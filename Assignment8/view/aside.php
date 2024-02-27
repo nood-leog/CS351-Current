@@ -1,7 +1,9 @@
-<?php
-
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+<!DOCTYPE html>            
+<aside>
+    <ul>
+        <li><a href = "products/guitars/index.php">Guitars</a></li>
+        <li><a href = "index.php">Basses</a></li>
+        <li><a href = "index.php">Drums</a></li>
+        <li><a href = "index.php">Keyboards</a></li>
+    </ul>
+</aside>

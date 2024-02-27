@@ -1,7 +1,8 @@
-<?php
-
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+<!DOCTYPE html>
+<footer>
+    <p>
+        &copy;
+        2023 The Guitar Store
+        <span id = "currentDate"></span>
+    </p>
+</footer>
