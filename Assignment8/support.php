@@ -4,40 +4,17 @@
 <html lang="en">
     <head>
         <title> Support </title>
-        <link rel="stylesheet" href=../styles/main.css>
+        <link rel="stylesheet" href=./styles/main.css>
         
-        <link rel="stylesheet" href=../styles/support.css>
-        <link rel="stylesheet" href="../styles/jquery-ui.min.css">  
+        <link rel="stylesheet" href=./styles/support.css>
+        <link rel="stylesheet" href="./styles/jquery-ui.min.css">  
         
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="../scripts/jquery-ui.min.js"></script>
-        <script src="../scripts/support.js"></script>
-        <script src="../scripts/date.js"></script>
+        <script src="./scripts/jquery-ui.min.js"></script>
+        <script src="./scripts/support.js"></script>
+        <script src="./scripts/date.js"></script>
     </head>
     <body>
-        <header>
-            <img src="../images/FenderStratocaster.png" alt="Fender Stratocaster">
-            <h2>The Guitar Store</h2>
-            <h3>For rock stars everywhere!</h3>    
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="../index.php">Lessons</a></li>
-                <li><a href="../products/index.php">Products</a></li>
-                <li><a href="../support/index.php">Support</a></li>
-                <li><a href="../shipping/index.php">Shipping</a></li>
-                <li><a href="../index.php">Contact Us</a>
-                    <ul>
-                        <li><a href="../index.php">Email</a></li>
-                        <li><a href="../index.php">Phone</a></li>
-                        <li><a href="../index.php">Live Chat</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
         <main>
             <section>
                 <h1>Frequently Asked Questions</h1>
@@ -63,31 +40,14 @@
                         Unless it's made of graphite, environmental factors definitely make a difference. Depending on where you live, the severity of the effects varies. Extremes of temperature or humidity, as well as drastic shifts between extremes, will take more of a toll and require more frequent setups.
                     </div>
 
-                    <h2> How can I prolong the life of my instrument?</h2>
+                    <h2>How can I prolong the life of my instrument?</h2>
                     <div> 
                         It's all about maintenance. From rehearsal to gig night, the world is a dangerous place and no guitar is safe. If you want your instrument alive and kicking for years to come, regular setups and professional repairs are a must.
                     </div>
                 </div>
 
             </section>
-             
-
-            <aside>
-                <ul>
-                    <li><a href="../products/guitars/index.php">Guitars</a></li>
-                    <li><a href="../index.php">Basses</a></li>
-                    <li><a href="../index.php">Drums</a></li>
-                    <li><a href="../index.php">Keyboards</a></li>
-                </ul>
-            </aside> 
         </main>
-
-        <footer>
-            <p>
-                &copy; 2023 The Guitar Store 
-                <span id="currentDate"></span>
-            </p>
-        </footer>
     </body>
 </html>
 

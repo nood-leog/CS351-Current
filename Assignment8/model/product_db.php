@@ -1,7 +1,13 @@
 <?php
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
+class ProductDB {
+    public static function getProductsByCategory($db, $category_id) {
+        $query = 'SELECT * FROM products WHERE category_id = :category_id';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':category_id', $category_id);
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 
+    // Add other product-related functions here
+}

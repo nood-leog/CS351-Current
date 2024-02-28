@@ -1,7 +1,11 @@
 <?php
+class CategoryDB {
+    public static function getAllCategories($db) {
+        $query = 'SELECT * FROM categories';
+        $statement = $db->prepare($query);
+        $statement->execute();
+        return $statement->fetchAll();
+    }
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+    // Add other category-related functions here
+}

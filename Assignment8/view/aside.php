@@ -1,9 +1,16 @@
-<!DOCTYPE html>            
+<!DOCTYPE html>
 <aside>
     <ul>
-        <li><a href = "products/guitars/index.php">Guitars</a></li>
-        <li><a href = "index.php">Basses</a></li>
-        <li><a href = "index.php">Drums</a></li>
-        <li><a href = "index.php">Keyboards</a></li>
+        <?php
+        require_once('./model/database.php');
+        require_once('./model/category_db.php');
+
+        $categories = CategoryDB::getAllCategories($db);
+
+        foreach ($categories as $category) {
+            $lowercaseCategory = strtolower($category['category_name']);
+            echo '<li><a href="index.php?action=' . $lowercaseCategory . '">' . $category['category_name'] . '</a></li>';
+        }
+        ?>
     </ul>
 </aside>

@@ -10,13 +10,6 @@
         <script src="./scripts/date.js"></script>
     </head>
     <body>
-
-
-        <?php
-        require_once('./view/header.php');
-        require_once('./view/horizontal_nav_bar.php');
-        ?>
-
         <main>
             <section>
                 <h1>Welcome to the Guitar Store!</h1>
@@ -34,10 +27,5 @@
             </section>
 
         </main>
-
-        <?php
-        require_once('./view/aside.php');
-        require_once('./view/footer.php');
-        ?>
     </body>
 </html>
