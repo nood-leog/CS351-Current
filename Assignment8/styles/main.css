@@ -71,10 +71,12 @@ nav ul ul{
     display: none;
     position: absolute;
     top: 100%;
+    
 }
 
 nav ul li:hover > ul {
     display: block;
+    z-index: 1;
 }
 nav > ul::after {
     content: "";

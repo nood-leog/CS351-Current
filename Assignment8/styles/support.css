@@ -1,8 +1,14 @@
 /*support style sheet*/
 
+
+html
+{
+    z-index: -1;
+}
 section {
     display: block;
     list-style-type: none;
+    
 }
 section h1 {
     font-size: 150%;

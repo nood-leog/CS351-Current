@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<head>
-    
-</head>
 <nav>
     <ul>
         <li><a href="index.php?action=home">Home</a></li>
