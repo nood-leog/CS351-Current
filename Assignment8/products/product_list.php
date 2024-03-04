@@ -54,12 +54,12 @@
                         <td><?php echo $product['product_id']; ?></td>
                         <td><?php echo $product['product_name']; ?></td>
                         <td class="right"><?php echo $product['list_price']; ?></td>
-                        <td><a href="./products/edit_product.php"><button>Edit</button></td>  
-                        <td><a href="./products/delete_product.php"><button>Delete</button></td>  
+                        <td><a href="index.php?action=home"><button>Edit</button></td>  
+                        <td><a href="index.php?action=home"><button>Delete</button></td>  
                     </tr>
                 <?php endforeach; ?>
             </table>
-            <p><a href="../products/add_product.php">Add Product</a></p>
+            <p><a href="index.php?action=home">Add Product</a></p>
         </section>
     </main>
 </body>
