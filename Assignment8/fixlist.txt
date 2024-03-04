@@ -1,0 +1,28 @@
+There was no requirement to create the classes for anything in this project, nor should there be any
+
+All .js files should be included at the bottom of the html, right before the closing body tag
+
+!DONE All under construction pages should be removed
+
+There should only be one <!DOCTYPE html> on any html page. The header, nav bar, aside, and footer  should not contain <!DOCTYPE html>, as these are all combined into one .html file
+
+
+!DONE On support.php, the accordion covers up the Contact Us drop down
+!DONE In product_list.php, the links for add, edit, and delete product should not be referencing a view file
+!DONEW ith the exception of ./index.php files, all other index.php files should redirect to ./index.php
+
+Folder structure was not changed for the assignment
+
+
+
+index.php should retrieve all data from the $_POST and $_GET arrays
+
+index.php should make all calls to model functions
+
+
+
+product_list.php should not contain control or calls to any model files
+
+there should be no calls to any model function in aside.php
+
+header.php, horizontal_nav_bar.php, aside.php, and footer.php should be included in files like shipping.php, support.php, and product_list.php, not in index.php
