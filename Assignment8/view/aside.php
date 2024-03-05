@@ -1,9 +1,6 @@
 <aside>
     <ul>
         <?php
-        require_once('./model/database.php');
-        require_once('./model/category_db.php');
-
         $categories = CategoryDB::getAllCategories($db);
 
         foreach ($categories as $category) {

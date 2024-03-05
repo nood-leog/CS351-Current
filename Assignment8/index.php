@@ -1,63 +1,36 @@
 <?php
 
-class IndexController {
-
-    public function homeAction() {
-        require_once('./view/header.php');
-        require_once('./view/horizontal_nav_bar.php');
-        require_once('home.php');
-        require_once('./view/aside.php');
-        require_once('./view/footer.php');
-    }
-
-    public function guitarsAction() {
-        require_once('./view/header.php');
-        require_once('./view/horizontal_nav_bar.php');
-        require_once('./products/Guitars/guitars.php');
-        require_once('./view/aside.php');
-        require_once('./view/footer.php');
-    }
-
-    public function shippingAction() {
-        require_once('./view/header.php');
-        require_once('./view/horizontal_nav_bar.php');
-        require_once('./shipping.php');
-        require_once('./view/aside.php');
-        require_once('./view/footer.php');
-    }
-
-    public function supportAction() {
-        require_once('./view/header.php');
-        require_once('./view/horizontal_nav_bar.php');
-        require_once('./support.php');
-        require_once('./view/aside.php');
-        require_once('./view/footer.php');
-    }
-
-    public function productAction() {
-        require_once('./view/header.php');
-        require_once('./view/horizontal_nav_bar.php');
-        require_once('./products/product_list.php');
-        require_once('./view/aside.php');
-        require_once('./view/footer.php');
-    }
-}
-
 $action = $_GET['action'] ?? 'home';
 
-$controller = new IndexController();
-
 if ($action === 'home') {
-    $controller->homeAction();
+    require_once('./model/database.php');
+    require_once('./model/category_db.php');
+    require_once('home.php');
+    
 } elseif ($action === 'guitars') {
-    $controller->guitarsAction();
+    require_once('./model/database.php');
+    require_once('./model/category_db.php');
+    require_once('./products/Guitars/guitars.php');
+    
 } elseif ($action === 'shipping') {
-    $controller->shippingAction();
+    require_once('./model/database.php');
+    require_once('./model/category_db.php');
+    require_once('./shipping.php');
+    
 } elseif ($action === 'support') {
-    $controller->supportAction();
+    require_once('./model/database.php');
+    require_once('./model/category_db.php');
+    require_once('./support.php');
+    
 } elseif ($action === 'product') {
-    $controller->productAction();
+    require_once('./model/database.php');
+    require_once('./model/product_db.php');
+    require_once('./model/category_db.php');
+    require_once('./products/product_list.php');
+    
 } else {
-    $controller->homeAction();
+    require_once('./model/database.php');
+    require_once('./model/category_db.php');
+    require_once('home.php');
 }
 ?>

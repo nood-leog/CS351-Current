@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<?php
+include('./view/header.php');
+include('./view/horizontal_nav_bar.php');
+include('./view/aside.php');
+?>
+
 <html lang="en">
 <head>
     <title>Products</title>
@@ -7,9 +14,7 @@
 </head>
 <body>
     <?php
-    require_once('./model/database.php');
-    require_once('./model/product_db.php');
-    require_once('./model/category_db.php');
+
 
     $categories = CategoryDB::getAllCategories($db);
 
@@ -64,3 +69,7 @@
     <script src="./scripts/date.js"></script>
 </body>
 </html>
+
+<?php
+include('./view/footer.php');
+?>

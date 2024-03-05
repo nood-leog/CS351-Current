@@ -2,6 +2,11 @@
 
 <!--Guitar product index-->
 
+<?php
+include('./view/header.php');
+include('./view/horizontal_nav_bar.php');
+include('./view/aside.php');
+?>
 
 <html lang="en">
     <head>        
@@ -32,3 +37,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     </body>
 </html>
+
+<?php
+include('./view/footer.php');
+?>
+
+

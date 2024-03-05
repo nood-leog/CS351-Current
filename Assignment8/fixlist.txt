@@ -1,17 +1,14 @@
-There was no requirement to create the classes for anything in this project, nor should there be any
+
+
 
 Folder structure was not changed for the assignment
 
-index.php should retrieve all data from the $_POST and $_GET arrays
-
-index.php should make all calls to model functions
-
-product_list.php should not contain control or calls to any model files
-
-there should be no calls to any model function in aside.php
-
-header.php, horizontal_nav_bar.php, aside.php, and footer.php should be included in files like shipping.php, support.php, and product_list.php, not in index.php
-
+!DONE product_list.php should not contain control or calls to any model files
+!DONE there should be no calls to any model function in aside.php
+!DONE There was no requirement to create the classes for anything in this project, nor should there be any
+!DONE index.php should retrieve all data from the $_POST and $_GET arrays
+!DONE index.php should make all calls to model functions
+!DONE header.php, horizontal_nav_bar.php, aside.php, and footer.php should be included in files like shipping.php, support.php, and product_list.php, not in index.php
 !DONE All .js files should be included at the bottom of the html, right before the closing body tag
 !DONE All under construction pages should be removed
 !DONE There should only be one <!DOCTYPE html> on any html page. The header, nav bar, aside, and footer  should not contain <!DOCTYPE html>, as these are all combined into one .html file
