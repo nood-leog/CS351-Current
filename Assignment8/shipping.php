@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <!--shipping index-->
-
-<?php
-include('./view/header.php');
-include('./view/horizontal_nav_bar.php');
-include('./view/aside.php');
-?>
-
 <html lang="en">
     <head>
         <title> Shipping </title>
         <link rel="stylesheet" href=./styles/main.css>
         <link rel="stylesheet" href=./styles/shipping.css>
     </head>
+
+    <?php
+    include('./view/header.php');
+    include('./view/horizontal_nav_bar.php');
+    include('./view/aside.php');
+    ?>
     <body>
         <main>
             <form onsubmit="calculateShipping()">

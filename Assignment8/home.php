@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<?php
-include('./view/header.php');
-include('./view/horizontal_nav_bar.php');
-include('./view/aside.php');
-?>
+
 <!-- Home page -->
 <!-- NO STYLE in HTML-->
 
@@ -12,6 +8,12 @@ include('./view/aside.php');
         <title> Assignment 8 Alex Boyce</title>
         <link rel="stylesheet" href=./styles/main.css>
     </head>
+
+    <?php
+    include('./view/header.php');
+    include('./view/horizontal_nav_bar.php');
+    include('./view/aside.php');
+    ?>
     <body>
         <main>
             <section>

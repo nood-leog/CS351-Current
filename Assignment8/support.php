@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <!-- support index -->
 
-<?php
-include('./view/header.php');
-include('./view/horizontal_nav_bar.php');
-include('./view/aside.php');
-?>
-
 <html lang="en">
     <head>
         <title> Support </title>
         <link rel="stylesheet" href=./styles/main.css>
-        
+
         <link rel="stylesheet" href=./styles/support.css>
         <link rel="stylesheet" href="./styles/jquery-ui.min.css">  
     </head>
+
+    <?php
+    include('./view/header.php');
+    include('./view/horizontal_nav_bar.php');
+    include('./view/aside.php');
+    ?>
     <body>
         <main>
             <section>

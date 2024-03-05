@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/products.css">
+</head>
 
 <?php
 include('./view/header.php');
@@ -6,21 +12,7 @@ include('./view/horizontal_nav_bar.php');
 include('./view/aside.php');
 ?>
 
-<html lang="en">
-<head>
-    <title>Products</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/products.css">
-</head>
 <body>
-    <?php
-
-
-    $categories = CategoryDB::getAllCategories($db);
-
-    $category_id = isset($_GET['category_id']) ? $_GET['category_id'] : 1; // Default category ID
-    $products = ProductDB::getProductsByCategory($db, $category_id);
-    ?>
     <main>
         <section>
             <h1>Product List</h1>
