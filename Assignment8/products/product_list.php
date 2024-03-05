@@ -31,8 +31,8 @@ include('./view/aside.php');
 
             <?php if ($category_id) : ?>
                 <?php
-                $selectedCategory = array_filter($categories, function ($cat) use ($category_id) {
-                    return $cat['category_id'] == $category_id;
+                $selectedCategory = array_filter($categories, function ($filtercat) use ($category_id) {
+                    return $filtercat['category_id'] == $category_id;
                 });
                 ?>
                 <h2><?php echo reset($selectedCategory)['category_name']; ?></h2>

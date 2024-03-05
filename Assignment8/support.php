@@ -5,7 +5,6 @@
     <head>
         <title> Support </title>
         <link rel="stylesheet" href=./styles/main.css>
-
         <link rel="stylesheet" href=./styles/support.css>
         <link rel="stylesheet" href="./styles/jquery-ui.min.css">  
     </head>
