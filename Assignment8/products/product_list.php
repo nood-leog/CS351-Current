@@ -4,7 +4,6 @@
     <title>Products</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/products.css">
-    <script src="./scripts/date.js"></script>
 </head>
 <body>
     <?php
@@ -62,5 +61,6 @@
             <p><a href="index.php?action=home">Add Product</a></p>
         </section>
     </main>
+    <script src="./scripts/date.js"></script>
 </body>
 </html>

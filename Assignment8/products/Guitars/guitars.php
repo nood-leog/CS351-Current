@@ -8,14 +8,7 @@
         <title> Guitars </title>
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/Guitars.css"> 
-        
-        <script src="./scripts/date.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="./scripts/guitars.js" defer></script>
-       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
-        
     </head>
 
     <body>
@@ -33,5 +26,9 @@
                 </ul>
             </section>
         </main>
+        <script src="./scripts/date.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="./scripts/guitars.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     </body>
 </html>

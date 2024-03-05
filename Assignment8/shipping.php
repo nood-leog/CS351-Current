@@ -6,8 +6,6 @@
         <title> Shipping </title>
         <link rel="stylesheet" href=./styles/main.css>
         <link rel="stylesheet" href=./styles/shipping.css>
-        <script src="./scripts/shipping.js"></script>
-        <script src="./scripts/date.js"></script>
     </head>
     <body>
         <main>
@@ -25,6 +23,8 @@
                 </p>
             </form>
         </main>
+        <script src="./scripts/shipping.js"></script>
+        <script src="./scripts/date.js"></script>
     </body>
 </html>
 

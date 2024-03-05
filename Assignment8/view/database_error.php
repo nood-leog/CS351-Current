@@ -5,9 +5,6 @@
     <head>
         <title> Shipping </title>
         <link rel="stylesheet" href=../styles/main.css>
-        
-
-        <script src="../scripts/date.js"></script>
     </head>
     <body>
         <header>
@@ -57,6 +54,7 @@
                 <span id="currentDate"></span>
             </p>
         </footer>
+        <script src="../scripts/date.js"></script>
     </body>
 </html>
 

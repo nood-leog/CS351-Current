@@ -8,11 +8,6 @@
         
         <link rel="stylesheet" href=./styles/support.css>
         <link rel="stylesheet" href="./styles/jquery-ui.min.css">  
-        
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="./scripts/jquery-ui.min.js"></script>
-        <script src="./scripts/support.js"></script>
-        <script src="./scripts/date.js"></script>
     </head>
     <body>
         <main>
@@ -48,6 +43,10 @@
 
             </section>
         </main>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="./scripts/jquery-ui.min.js"></script>
+        <script src="./scripts/support.js"></script>
+        <script src="./scripts/date.js"></script>
     </body>
 </html>
 

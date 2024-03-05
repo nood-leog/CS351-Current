@@ -7,7 +7,6 @@
     <head>
         <title> Assignment 8 Alex Boyce</title>
         <link rel="stylesheet" href=./styles/main.css>
-        <script src="./scripts/date.js"></script>
     </head>
     <body>
         <main>
@@ -25,7 +24,7 @@
                 <p>If you aren't completely satisfied with anything you buy from our store, you can return it for a full refund.<b> No questions asked!</b></p>
 
             </section>
-
         </main>
+        <script src="./scripts/date.js"></script>
     </body>
 </html>

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <aside>
     <ul>
         <?php
