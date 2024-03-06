@@ -17,7 +17,7 @@
             <?php include('./view/aside.php'); ?>
             <section>
                 <h1>Product List</h1>
-                <form method="get" action="./index.php">
+                <form>
                     <input type="hidden" name="action" value="product">
                     <select name="category_id" id="category">
                         <?php foreach ($categories as $category) : ?>
