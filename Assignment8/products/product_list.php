@@ -29,17 +29,9 @@
                     <span>&lt;===</span>
                     <input type="submit" value="Choose">
                 </form>
-
-                <?php if ($category_id) : ?>
-                    <?php
-                    $selectedCategory = array_filter($categories, function ($filtercat) use ($category_id) {
-                        return $filtercat['category_id'] == $category_id;
-                    });
-                    ?>
-                    <h2><?php echo reset($selectedCategory)['category_name']; ?></h2>
-                <?php endif; ?>
-
+                
                 <table>
+                    <h2><?php echo reset($selectedCategory)['category_name']; ?></h2>
                     <tr>
                         <th>Product ID</th>
                         <th>Name</th>

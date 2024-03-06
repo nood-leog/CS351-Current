@@ -15,7 +15,6 @@ if ($action == NULL) {
 if ($action === 'home') {
     $categories = getAllCategories($db);
     include('home.php');
-    
 } elseif ($action === 'guitars') {
     $categories = getAllCategories($db);
     include('./products/Guitars/guitars.php');
@@ -29,6 +28,10 @@ if ($action === 'home') {
     $categories = getAllCategories($db);
     $category_id = isset($_GET['category_id']) ? $_GET['category_id'] : 1;
     $products = getProductsByCategory($db, $category_id);
+
+    $selectedCategory = array_filter($categories, function ($filtercat) use ($category_id) {
+        return $filtercat['category_id'] == $category_id;
+    });
     include('./products/product_list.php');
 } else {
     $categories = getAllCategories($db);
