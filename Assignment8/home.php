@@ -12,10 +12,11 @@
     <?php
     include('./view/header.php');
     include('./view/horizontal_nav_bar.php');
-    include('./view/aside.php');
+    
     ?>
     <body>
         <main>
+            <?php include('./view/aside.php'); ?>
             <section>
                 <h1>Welcome to the Guitar Store!</h1>
                 <p>Why buy from the Guitar Store? We have the world's largest selection of guitars, plus lots of other musical instruments. We let you try before you buy, so you can ensure the instrument is right for you. Our website is easy to navigate and, if you need help, an associate is seconds away. Finally, we can also help you learn to play an instrument. If you already know how, we can help you improve!</p>
@@ -31,10 +32,10 @@
 
             </section>
         </main>
+        <?php
+        include('./view/footer.php');
+        ?>
         <script src="./scripts/date.js"></script>
     </body>
 </html>
 
-<?php
-include('./view/footer.php');
-?>

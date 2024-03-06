@@ -7,5 +7,3 @@ function getProductsByCategory($db, $category_id) {
     $statement->execute();
     return $statement->fetchAll();
 }
-
-$products = getProductsByCategory($db, $category_id);

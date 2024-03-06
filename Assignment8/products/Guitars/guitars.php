@@ -2,11 +2,7 @@
 
 <!--Guitar product index-->
 
-<?php
-include('./view/header.php');
-include('./view/horizontal_nav_bar.php');
-include('./view/aside.php');
-?>
+
 
 <html lang="en">
     <head>        
@@ -17,7 +13,12 @@ include('./view/aside.php');
     </head>
 
     <body>
+        <?php
+        include('./view/header.php');
+        include('./view/horizontal_nav_bar.php');
+        ?>
         <main>
+            <?php include('./view/aside.php'); ?>
             <section>
                 <h1>Our Guitars</h1>
                 <h2>Check out our fine selection of premium guitars!</h2>
@@ -31,6 +32,9 @@ include('./view/aside.php');
                 </ul>
             </section>
         </main>
+        <?php
+        include('./view/footer.php');
+        ?>
         <script src="./scripts/date.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="./scripts/guitars.js" defer></script>
@@ -38,8 +42,6 @@ include('./view/aside.php');
     </body>
 </html>
 
-<?php
-include('./view/footer.php');
-?>
+
 
 

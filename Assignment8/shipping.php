@@ -7,13 +7,14 @@
         <link rel="stylesheet" href=./styles/shipping.css>
     </head>
 
-    <?php
-    include('./view/header.php');
-    include('./view/horizontal_nav_bar.php');
-    include('./view/aside.php');
-    ?>
+
     <body>
+        <?php
+        include('./view/header.php');
+        include('./view/horizontal_nav_bar.php');
+        ?>
         <main>
+            <?php include('./view/aside.php'); ?>
             <form onsubmit="calculateShipping()">
                 <h2>Shipping Costs</h2>
                 <br>
@@ -28,12 +29,13 @@
                 </p>
             </form>
         </main>
+        <?php
+        include('./view/footer.php');
+        ?>
         <script src="./scripts/shipping.js"></script>
         <script src="./scripts/date.js"></script>
     </body>
 </html>
 
-<?php
-include('./view/footer.php');
-?>
+
 

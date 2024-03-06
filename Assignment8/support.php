@@ -9,13 +9,14 @@
         <link rel="stylesheet" href="./styles/jquery-ui.min.css">  
     </head>
 
-    <?php
-    include('./view/header.php');
-    include('./view/horizontal_nav_bar.php');
-    include('./view/aside.php');
-    ?>
+
     <body>
+        <?php
+        include('./view/header.php');
+        include('./view/horizontal_nav_bar.php')
+        ?>
         <main>
+            <?php include('./view/aside.php'); ?>
             <section>
                 <h1>Frequently Asked Questions</h1>
                 <div id="faq">
@@ -48,6 +49,10 @@
 
             </section>
         </main>
+        <?php
+        include('./view/footer.php');
+        ?>
+
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="./scripts/jquery-ui.min.js"></script>
         <script src="./scripts/support.js"></script>
@@ -55,8 +60,5 @@
     </body>
 </html>
 
-<?php
-include('./view/footer.php');
-?>
 
 

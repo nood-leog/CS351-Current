@@ -6,8 +6,3 @@ function getAllCategories($db) {
     $statement->execute();
     return $statement->fetchAll();
 }
-
-$categories = getAllCategories($db);
-
-$category_id = isset($_GET['category_id']) ? $_GET['category_id'] : 1;
-
