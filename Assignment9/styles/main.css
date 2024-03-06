@@ -29,7 +29,7 @@ ul{
 header {
     padding: 15px;
     line-height: 5px;
-    background: linear-gradient(45deg, white 0%, lightcoral 25%, black 100%);
+    background: linear-gradient(45deg, white 0%, lightcoral 75%, black 100%);
     border-bottom: 2px solid black;
 }
 header img{
@@ -47,7 +47,7 @@ header h3{
 
 header a img{
     float: right;
-    width: 60px;
+    width: 55px;
     padding-right: 30px;
     padding-top:15px;
 }
