@@ -1,0 +1,40 @@
+/*shipping.css*/
+
+section {
+    float: right;
+    width:580px;
+    padding: 0;
+    padding-left: 50px;
+    margin-top: 2em;
+}
+
+section h2{
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+
+}
+
+section p{
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+}
+
+section a{
+    line-height: 3;
+}
+
+section span a{
+    line-height: 3;
+    padding-right: 350px;
+}
+section button{
+    width: 60px;
+}
+
+section input{
+    width: 300px;
+} 
+
+
