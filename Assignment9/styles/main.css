@@ -45,6 +45,13 @@ header h3{
     padding-left: 9.25em;
 }
 
+header a img{
+    float: right;
+    width: 60px;
+    padding-right: 30px;
+    padding-top:15px;
+}
+
 /* the styles for the navigation menu */
 nav{
     border-bottom: 2px solid black;
