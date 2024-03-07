@@ -33,9 +33,9 @@ if ($action === 'home') {
     });
     include('./products/product_list.php');
     
-} elseif ($action === 'login') {
+} elseif ($action === 'customer_login') {
     $categories = getAllCategories($db);
-    include('./customer_login.php');
+    include('./customer/customer_login.php');
     
 } else {
     $categories = getAllCategories($db);

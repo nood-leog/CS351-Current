@@ -1,0 +1,54 @@
+/*customer.css*/
+
+body{
+    width: 1200px;
+}
+
+nav ul li a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: lightcoral;
+    font-weight: bold;
+}
+
+section {
+    float: right;
+    width:980px;
+    padding: 0;
+    padding-left: 50px;
+    margin-top: 2em;
+}
+
+section h2{
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+
+}
+
+section p{
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+}
+
+section a{
+    line-height: 3;
+}
+
+section span a{
+    line-height: 3;
+    padding-right: 350px;
+}
+section button{
+    width: 60px;
+}
+
+section input{
+    width: 300px;
+} 
+
+
