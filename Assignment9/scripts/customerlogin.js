@@ -1,41 +1,16 @@
-//customerlogin.js
-"use strict";
-/*
-// Define the $() function
-function $(selector) {
-    return document.querySelector(selector);
-}
+// customerlogin.js
+document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("customerLoginForm");
 
-// Event handler for DOMContentLoaded
-document.addEventListener('DOMContentLoaded', function () {
-    $('form').addEventListener('submit', function (event) {
-        event.preventDefault(); 
-        checkEmail();
+    form.addEventListener("submit", function(event) {
+        var emailInput = document.getElementById("emailInput").value;
+
+        // Check if email is empty or no emails found
+        if (emailInput.trim() === "" || document.getElementById("noEmailsFound").value === "true") {
+            alert("No emails found for the entered address. Please enter a valid email. ");
+            
+        }
     });
-    // Move focus to the product cost text box
-    $('#emailInput').focus();
 });
-
-// 
-function checkEmail() {
-    // Get the email input value
-    const emailString = $('#emailInput').value;
-
-    // Check if the email is not empty
-    if (emailString.trim() !== '') {
-        // Call a function to check email presence in the database (implement this in customerlogin.js)
-        checkEmailInDatabase(emailString);
-    } else {
-        // Show an alert for an empty email
-        alert('Please enter a valid email.');
-        "index.php?action=customer_login";
-        // Leave focus on email input
-        $('#emailInput').focus();
-    }
-}
-
-*/
-
-
 
 

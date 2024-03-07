@@ -40,10 +40,8 @@ if ($action === 'home') {
     include('./customer/customer_login.php');
 } elseif ($action === 'customer_page') {
     $categories = getAllCategories($db);
-
     // Get the email input from the form
     $emailInput = filter_input(INPUT_POST, 'emailInput');
-
     // Call the function to check the email in the database
     $customers = get_customer_info_by_email_address($emailInput);
 
@@ -54,8 +52,10 @@ if ($action === 'home') {
             echo $customer['email_address'] . "<br>";
         }
     } else {
+        echo '<input type="hidden" id="noEmailsFound" name="noEmailsFound" value="true">';
         echo '<p>No emails found for the entered address.</p>';
-    } 
+    }
+
 
     // Include the customer_login.php form at the end
     include('./customer/customer_login.php');

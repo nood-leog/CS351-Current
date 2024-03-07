@@ -15,8 +15,9 @@
 
         <main>
             <?php include('./view/aside.php'); ?>
-            <form method="post" action="index.php">
+            <form id="customerLoginForm" method="post" action="index.php">
                 <input type="hidden" name="action" value="customer_page">
+                <input type="hidden" id="noEmailsFound" name="noEmailsFound" value="false">
                 <section>
                     <h2>Customer Login</h2>
                     <p>
