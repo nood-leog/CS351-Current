@@ -3,6 +3,8 @@
 include('./model/database.php');
 include('./model/category_db.php');
 include('./model/product_db.php');
+include('./model/customer_db.php');
+include('./model/address_db.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -32,11 +34,31 @@ if ($action === 'home') {
         return $filtercat['category_id'] == $category_id;
     });
     include('./products/product_list.php');
-    
 } elseif ($action === 'customer_login') {
     $categories = getAllCategories($db);
+
     include('./customer/customer_login.php');
-    
+} elseif ($action === 'customer_page') {
+    $categories = getAllCategories($db);
+
+    // Get the email input from the form
+    $emailInput = filter_input(INPUT_POST, 'emailInput');
+
+    // Call the function to check the email in the database
+    $customers = get_customer_info_by_email_address($emailInput);
+
+    // Display the results
+    if (!empty($customers)) {
+        echo '<h2>Emails Found:</h2>';
+        foreach ($customers as $customer) {
+            echo $customer['email_address'] . "<br>";
+        }
+    } else {
+        echo '<p>No emails found for the entered address.</p>';
+    } 
+
+    // Include the customer_login.php form at the end
+    include('./customer/customer_login.php');
 } else {
     $categories = getAllCategories($db);
     include('home.php');

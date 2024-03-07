@@ -2,7 +2,7 @@
 <!--customer index-->
 <html lang="en">
     <head>
-        <title> Customer Login </title>
+        <title> Customer Info </title>
         <link rel="stylesheet" href=./styles/main.css>
         <link rel="stylesheet" href=./styles/customer.css>
     </head>
@@ -15,26 +15,16 @@
         ?>
         <main>
             <?php include('./view/aside.php'); ?>
-            <form onsubmit="checkEmail()">
+            <form>
                 <section>
-                    <h2>Customer Login</h2>
-                    <p>
-                        <label for="emailInput">Email Address:</label> 
-                        <input type="text" id="emailInput" name="emailInput">
-                        <p>
-                            <button type="submit">Login</button> 
-                            <a href="index.php?action=home"><button>Cancel</button></a>
-                        </p>
-                    </p>
+                    <h2>It works cunt</h2>
                 </section>
             </form>
         </main>
         <?php
         include('./view/footer.php');
-        //<span><a href="index.php?action=product"><button>Login</button></a></span>
         ?>
 
-        <script src="./scripts/customerlogin.js"></script>
         <script src="./scripts/date.js"></script>
     </body>
 </html>

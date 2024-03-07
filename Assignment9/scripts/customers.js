@@ -1,5 +1,6 @@
 /* 
 All JavaScript functions in this file must be triggered by an event
+
 - validateCustomerInfo()
 o Validates the customer information as follows:
  First name and last name
