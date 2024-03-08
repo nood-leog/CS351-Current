@@ -21,22 +21,22 @@
                     <form>
                         <p>
                             <label for="firstName">First Name:</label>
-                            <input type="text" id="firstName" name="firstName">
+                            <input type="text" id="firstName" name="firstName" value="<?php echo isset($cuEmail['first_name']) ? $cuEmail['first_name'] : ''; ?>">
                         </p>
 
                         <p>
                             <label for="lastName">Last Name:</label>
-                            <input type="text" id="lastName" name="lastName">
+                            <input type="text" id="lastName" name="lastName" value="<?php echo isset($cuEmail['last_name']) ? $cuEmail['last_name'] : ''; ?>">
                         </p>
 
                         <p>
                             <label for="emailInput">Email Address:</label>
-                            <input type="text" id="emailInput" name="emailInput">
+                            <input type="text" id="emailInput" name="emailInput" value="<?php echo isset($cuEmail['email_address']) ? $cuEmail['email_address'] : ''; ?>">
                         </p>
 
                         <p>
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" value="<?php echo isset($cuEmail['password']) ? $cuEmail['password'] : ''; ?>">
                         </p>
 
                         <p>
@@ -46,7 +46,7 @@
 
                         <span>
                             <a href="index.php?action=update_customer_info">
-                            <button type="button">Update Customer Information</button>
+                                <button type="button">Update Customer Information</button>
                             </a>
                         </span>
                     </form>

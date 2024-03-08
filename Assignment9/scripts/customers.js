@@ -1,3 +1,11 @@
+
+//customers.js
+"use strict";
+
+// Define the $() function
+function $(selector) {
+    return document.querySelector(selector);
+}
 /* 
 All JavaScript functions in this file must be triggered by an event
 

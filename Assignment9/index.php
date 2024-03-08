@@ -42,8 +42,9 @@ if ($action === 'home') {
     // Get the email input from the form
     $emailInput = filter_input(INPUT_POST, 'emailInput');
     // Call the function to check the email in the database
-    $cuEmail = get_customer_info_by_email_address($emailInput);
-    if (!empty($cuEmail)) {
+    $customerInfo = get_customer_info_by_email_address($emailInput);
+    if (!empty($customerInfo)) {
+        $cuEmail = $customerInfo[0];
         include('./customer/customer.php');
     } else {
         include('./customer/customer_login.php');
