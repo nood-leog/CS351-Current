@@ -12,28 +12,23 @@
         include('./view/header.php');
         include('./view/horizontal_nav_bar.php');
         ?>
-
         <main>
             <?php include('./view/aside.php'); ?>
-            <form id="customerLoginForm" method="post" action="index.php">
-                <input type="hidden" name="action" value="customer_page">
-                <input type="hidden" id="noEmailsFound" name="noEmailsFound" value="false">
-                <section>
-                    <h2>Customer Login</h2>
-                    <p>
-                        <label for="emailInput">Email Address:</label>
-                        <input type="text" id="emailInput" name="emailInput">
-                    </p>
-                    <p>
-                        <button type="submit">Login</button>
-                        <a href="index.php?action=home"><button type="button">Cancel</button></a>
-                    </p>
-                </section>
+            <form method="post" action="index.php?action=customer_page">
+
+                <h2>Customer Login</h2>
+                <p>
+                    <label for="emailInput">Email Address:</label>
+                    <input type="text" id="emailInput" name="emailInput">
+                </p>
+                <span>
+                    <button type="submit">Login</button>
+                    <a href="index.php?action=home"><button type="button">Cancel</button></a>
+                </span>
+
             </form>
         </main>
-
         <?php include('./view/footer.php'); ?>
-        <script src="./scripts/customerlogin.js"></script>
         <script src="./scripts/date.js"></script>
     </body>
 </html>

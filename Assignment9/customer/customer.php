@@ -17,7 +17,7 @@
             <?php include('./view/aside.php'); ?>
             <form>
                 <section>
-                    <h2>It works cunt</h2>
+                    <h2>It works yippie</h2>
                 </section>
             </form>
         </main>

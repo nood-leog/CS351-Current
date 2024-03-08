@@ -1,6 +1,6 @@
 /*cutomer_login.css*/
 
-section {
+form {
     float: right;
     width:580px;
     padding: 0;
@@ -8,32 +8,32 @@ section {
     margin-top: 2em;
 }
 
-section h2{
+form h2{
     font-size: 150%;
     margin: 0;
     padding: 0;
 
 }
 
-section p{
+form p{
     margin: 0;
     padding: 0;
     line-height: 3;
 }
 
-section a{
+form a{
     line-height: 3;
 }
 
-section span a{
+form span a{
     line-height: 3;
-    padding-right: 350px;
+    padding-left: 350px;
 }
-section button{
+form span button{
     width: 60px;
 }
 
-section input{
+form input{
     width: 300px;
 } 
 
