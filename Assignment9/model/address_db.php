@@ -26,7 +26,7 @@ function update_address($address_id, $line1, $line2, $city, $state, $zip_code, $
 
 function get_states() {
     global $db;
-    $query = 'SELECT stateFROM state_tax_rates ORDER BY state';
+    $query = 'SELECT state FROM state_tax_rates ORDER BY state';
     $statement = $db->prepare($query);
     $statement->execute();
     return $statement->fetchAll();

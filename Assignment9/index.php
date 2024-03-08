@@ -39,12 +39,17 @@ if ($action === 'home') {
     include('./customer/customer_login.php');
 } elseif ($action === 'customer_page') {
     $categories = getAllCategories($db);
-    // Get the email input from the form
     $emailInput = filter_input(INPUT_POST, 'emailInput');
-    // Call the function to check the email in the database
     $customerInfo = get_customer_info_by_email_address($emailInput);
+
     if (!empty($customerInfo)) {
         $cuEmail = $customerInfo[0];
+        $states = get_states();
+        $customer_id = $cuEmail['customer_id'];
+        $customer = get_customer_info($customer_id);
+        $address_id = get_address($customer_id);
+
+        
         include('./customer/customer.php');
     } else {
         include('./customer/customer_login.php');
@@ -55,12 +60,10 @@ if ($action === 'home') {
     include('./customer/customer.php');
     //Updates customer information that has changed
     //Displays the customer page with the updated information
-    
 } elseif ($action === 'update_billing_address') {
     $categories = getAllCategories($db);
     //Updates the complete billing address
     //Displays the customer page with the updated information
-    
 } elseif ($action === 'update_shipping_address') {
     $categories = getAllCategories($db);
     //Updates the complete shipping address
