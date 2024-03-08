@@ -15,11 +15,51 @@
         ?>
         <main>
             <?php include('./view/aside.php'); ?>
-            <form>
-                <section>
-                    <h2>It works yippie</h2>
-                </section>
-            </form>
+            <section>
+                <div>
+                    <h2>Customer information</h2>
+                    <form>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </p>
+
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </p>
+
+                        <p>
+                            <label for="emailInput">Email Address:</label>
+                            <input type="text" id="emailInput" name="emailInput">
+                        </p>
+
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">
+                        </p>
+
+                        <p>
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword">
+                        </p>
+
+                        <span>
+                            <a href="index.php?action=update_customer_info">
+                            <button type="button">Update Customer Information</button>
+                            </a>
+                        </span>
+                    </form>
+                </div>
+
+                <div>
+                    <h2>Billing Address</h2>
+                </div>
+
+                <div>
+                    <h2>Shipping Address</h2>
+                </div>
+            </section>
         </main>
         <?php
         include('./view/footer.php');

@@ -15,40 +15,13 @@ nav ul li a{
 }
 
 section {
-    float: right;
-    width:980px;
-    padding: 0;
-    padding-left: 50px;
-    margin-top: 2em;
+    width:980px;  
 }
 
-section h2{
-    font-size: 150%;
-    margin: 0;
-    padding: 0;
-
+section div {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
 }
-
-section p{
-    margin: 0;
-    padding: 0;
-    line-height: 3;
-}
-
-section a{
-    line-height: 3;
-}
-
-section span a{
-    line-height: 3;
-    padding-right: 350px;
-}
-section button{
-    width: 60px;
-}
-
-section input{
-    width: 300px;
-} 
 
 

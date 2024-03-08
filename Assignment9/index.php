@@ -47,9 +47,23 @@ if ($action === 'home') {
         include('./customer/customer.php');
     } else {
         include('./customer/customer_login.php');
-        echo '<script>alert("The email address you entered was not found in our system.")</script>'; 
+        echo '<script>alert("The email address you entered was not found in our system.")</script>';
     }
-
+} elseif ($action === 'update_customer_info') {
+    $categories = getAllCategories($db);
+    include('./customer/customer.php');
+    //Updates customer information that has changed
+    //Displays the customer page with the updated information
+    
+} elseif ($action === 'update_billing_address') {
+    $categories = getAllCategories($db);
+    //Updates the complete billing address
+    //Displays the customer page with the updated information
+    
+} elseif ($action === 'update_shipping_address') {
+    $categories = getAllCategories($db);
+    //Updates the complete shipping address
+    //Displays the customer page with the updated information
 } else {
     $categories = getAllCategories($db);
     include('home.php');
