@@ -41,9 +41,15 @@ if ($action === 'home') {
     $categories = getAllCategories($db);
     $emailInput = filter_input(INPUT_POST, 'emailInput');
     $customerInfo = get_customer_info_by_email_address($emailInput);
+    $cuEmail = $customerInfo[0]; //works
 
     if (!empty($customerInfo)) {
-        $cuEmail = $customerInfo[0]; //works
+
+        $firstName = $cuEmail['first_name'];
+        $lastName = $cuEmail['last_name'];
+        $email = $cuEmail['email_address'];
+        $password = $cuEmail['password'];
+        
         $states = get_states(); //works
 
         $customer_id = $cuEmail['customer_id']; //works
@@ -66,7 +72,7 @@ if ($action === 'home') {
         $billZip = isset($billID['zip_code']) ? $billID['zip_code'] : 'N/A';
         //phone
         $billPhone = isset($billID['phone']) ? $billID['phone'] : 'N/A';
-     
+
         //line1
         $shipLine1 = isset($shipID['line1']) ? $shipID['line1'] : 'N/A';
         //line2
@@ -87,17 +93,41 @@ if ($action === 'home') {
     }
 } elseif ($action === 'update_customer_info') {
     $categories = getAllCategories($db);
-    include('./customer/customer.php');
-    //Updates customer information that has changed
-    //Displays the customer page with the updated information
+   
+    if (validateCustomerInfo()) {
+        update_first_name($customer_id, $firstName);
+        update_last_name($customer_id, $lastName);
+        update_email_address($customer_id, $email);
+        update_password($customer_id, $password);
+        include('./customer/customer.php');
+    } else {
+        include('./customer/customer_login.php');
+        echo '<script>alert("Please enter valid information to update.")</script>';
+    }
 } elseif ($action === 'update_billing_address') {
     $categories = getAllCategories($db);
-    //Updates the complete billing address
-    //Displays the customer page with the updated information
+    
+    if (validateBillingAddress()) {
+        update_address($billing_address_id, $line1, $line2, $city, $state, $zip_code, $phone);
+    } else {
+        include('./customer/customer_login.php');
+        echo '<script>alert("Please enter valid information to update.")</script>';
+    }
+
+
+    include('./customer/customer.php');
 } elseif ($action === 'update_shipping_address') {
     $categories = getAllCategories($db);
-    //Updates the complete shipping address
-    //Displays the customer page with the updated information
+    
+    if (validateShippingAddress()) {
+        update_address($shipping_address_id, $line1, $line2, $city, $state, $zip_code, $phone);
+    } else {
+        include('./customer/customer_login.php');
+        echo '<script>alert("Please enter valid information to update.")</script>';
+    }
+
+
+    include('./customer/customer.php');
 } else {
     $categories = getAllCategories($db);
     include('home.php');

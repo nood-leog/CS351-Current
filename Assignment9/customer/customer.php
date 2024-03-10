@@ -18,49 +18,45 @@
             <section>
                 <div>
                     <h2>Customer information</h2>
-                    <form>
-                        <p>
-                            <label for="firstName">First Name:</label>
-                            <input type="text" id="firstName" name="firstName" value="<?php echo isset($cuEmail['first_name']) ? $cuEmail['first_name'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" value="<?php echo isset($firstName) ? $firstName : ''; ?>">
+                    </p>
 
-                        <p>
-                            <label for="lastName">Last Name:</label>
-                            <input type="text" id="lastName" name="lastName" value="<?php echo isset($cuEmail['last_name']) ? $cuEmail['last_name'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" value="<?php echo isset($lastName) ? $lastName : ''; ?>">
+                    </p>
 
-                        <p>
-                            <label for="emailInput">Email Address:</label>
-                            <input type="text" id="emailInput" name="emailInput" value="<?php echo isset($cuEmail['email_address']) ? $cuEmail['email_address'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="emailInput">Email Address:</label>
+                        <input type="text" id="emailInput" name="emailInput" value="<?php echo isset($email) ? $email : ''; ?>">
+                    </p>
 
-                        <p>
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" value="<?php echo isset($cuEmail['password']) ? $cuEmail['password'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" value="<?php echo isset($password) ? $password : ''; ?>">
+                    </p>
 
-                        <p>
-                            <label for="confirmPassword">Confirm Password:</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword">
-                        </p>
+                    <p>
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword">
+                    </p>
 
-                        <span>
-                            <a href="index.php?action=update_customer_info">
-                                <button type="button">Update Customer Information</button>
-                            </a>
-                        </span>
+                    <form method="post" action="index.php?action=update_customer_info" onsubmit="return validateCustomerInfo()">
+                        <input type="hidden" name="customer_id" value="<?php echo $customer_id . $firstName . $lastName . $email . $password; ?>">
+                        <button type="submit">Update Customer Information</button>
                     </form>
+
                 </div>
 
                 <div>
                     <h2>Billing Address</h2>
-                    <form>
-                        <p>
-                            <label for="billLine1">Address line 1:</label>
-                            <input type="text" id="billLine1" name="billLine1" value="<?php echo isset($billLine1) ? $billLine1 : ''; ?>">
-                        </p>
-                    </form>
 
+                    <p>
+                        <label for="billLine1">Address line 1:</label>
+                        <input type="text" id="billLine1" name="billLine1" value="<?php echo isset($billLine1) ? $billLine1 : ''; ?>">
+                    </p>
 
                     <p>
                         <label for="billLine2">Address line 2:</label>
@@ -94,11 +90,11 @@
                     </p>
 
                     <span>
-                        <a href="index.php?action=update_customer_info">
+                        <a href="index.php?action=update_billing_address">
                             <button type="button">Update Billing Information</button>
                         </a>
                     </span>
-                    </form>
+
                 </div>
 
                 <div>
@@ -141,18 +137,18 @@
                     </p>
 
                     <span>
-                        <a href="index.php?action=update_customer_info">
+                        <a href="index.php?action=update_shipping_address">
                             <button type="button">Update Shipping Information</button>
                         </a>
                     </span>
-                    </form>
+
                 </div>
             </section>
         </main>
         <?php
         include('./view/footer.php');
         ?>
-
+        <script src="./scripts/customers.js"></script>
         <script src="./scripts/date.js"></script>
     </body>
 </html>
