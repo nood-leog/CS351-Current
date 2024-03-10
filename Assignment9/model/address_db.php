@@ -6,7 +6,7 @@ function get_address($address_id) {
     $statement = $db->prepare($query);
     $statement->bindValue(':address_id', $address_id);
     $statement->execute();
-    return $statement->fetchAll();
+    return $statement->fetch();
 }
 
 function update_address($address_id, $line1, $line2, $city, $state, $zip_code, $phone) {

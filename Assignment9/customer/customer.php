@@ -56,89 +56,95 @@
                     <h2>Billing Address</h2>
                     <form>
                         <p>
-                            <label for="line1">Address line 1:</label>
-                            <input type="text" id="line1" name="line1" value="<?php echo isset($address_id['line1']) ? $address_id['line1'] : ''; ?>">
+                            <label for="billLine1">Address line 1:</label>
+                            <input type="text" id="billLine1" name="billLine1" value="<?php echo isset($billLine1) ? $billLine1 : ''; ?>">
                         </p>
+                    </form>
 
-                        <p>
-                            <label for="line2">Address line 2:</label>
-                            <input type="text" id="line2" name="line2" value="<?php echo isset($address_id['line2']) ? $address_id['line2'] : ''; ?>">
-                        </p>
 
-                        <p>
-                            <label for="city">City:</label>
-                            <input type="text" id="city" name="city" value="<?php echo isset($address_id['city']) ? $address_id['city'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="billLine2">Address line 2:</label>
+                        <input type="text" id="billLine2" name="billLine2" value="<?php echo isset($billLine2) ? $billLine2 : ''; ?>">
+                    </p>
 
-                        <p>
-                            <label for="state">State:</label>
-                            <select id="state" name="state">
-                                <?php foreach ($states as $state): ?>
-                                    <option value="<?php echo $state['state']; ?>" <?php echo isset($address_id['state']) && $address_id['state'] === $state['state'] ? 'selected' : ''; ?>><?php echo $state['state']; ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                        </p>
+                    <p>
+                        <label for="billCity">City:</label>
+                        <input type="text" id="billCity" name="billCity" value="<?php echo isset($billCity) ? $billCity : ''; ?>">
+                    </p>
 
-                        <p>
-                            <label for="zip_code">Zip Code:</label>
-                            <input type="text" id="zip_code" name="zip_code" value="<?php echo isset($address_id['zip_code']) ? $address_id['zip_code'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="state">State:</label>
+                        <select id="state" name="state">
+                            <?php foreach ($states as $state): ?>
+                                <option value="<?php echo $state['state']; ?>" <?php echo isset($billState) && $billState === $state['state'] ? 'selected' : ''; ?>><?php echo $state['state']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </p>
 
-                        <p>
-                            <label for="phone">Phone:</label>
-                            <input type="text" id="phone" name="phone" value="<?php echo isset($address_id['phone']) ? $address_id['phone'] : ''; ?>">
-                        </p>
 
-                        <span>
-                            <a href="index.php?action=update_customer_info">
-                                <button type="button">Update Billing Information</button>
-                            </a>
-                        </span>
+
+                    <p>
+                        <label for="billZip">Zip Code:</label>
+                        <input type="text" id="billZip" name="billZip" value="<?php echo isset($billZip) ? $billZip : ''; ?>">
+                    </p>
+
+                    <p>
+                        <label for="billPhone">Phone:</label>
+                        <input type="text" id="billPhone" name="billPhone" value="<?php echo isset($billPhone) ? $billPhone : ''; ?>">
+                    </p>
+
+                    <span>
+                        <a href="index.php?action=update_customer_info">
+                            <button type="button">Update Billing Information</button>
+                        </a>
+                    </span>
                     </form>
                 </div>
 
-                       <div>
+                <div>
                     <h2>Shipping Address</h2>
                     <form>
                         <p>
-                            <label for="line1">Address line 1:</label>
-                            <input type="text" id="line1" name="line1" value="<?php echo isset($address_id['line1']) ? $address_id['line1'] : ''; ?>">
+                            <label for="shipLine1">Address line 1:</label>
+                            <input type="text" id="shipLine1" name="shipLine1" value="<?php echo isset($shipLine1) ? $shipLine1 : ''; ?>">
                         </p>
+                    </form>
 
-                        <p>
-                            <label for="line2">Address line 2:</label>
-                            <input type="text" id="line2" name="line2" value="<?php echo isset($address_id['line2']) ? $address_id['line2'] : ''; ?>">
-                        </p>
 
-                        <p>
-                            <label for="city">City:</label>
-                            <input type="text" id="city" name="city" value="<?php echo isset($address_id['city']) ? $address_id['city'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="shipLine2">Address line 2:</label>
+                        <input type="text" id="shipLine2" name="shipLine2" value="<?php echo isset($shipLine2) ? $shipLine2 : ''; ?>">
+                    </p>
 
-                        <p>
-                            <label for="state">State:</label>
-                            <select id="state" name="state">
-                                <?php foreach ($states as $state): ?>
-                                    <option value="<?php echo $state['state']; ?>" <?php echo isset($address_id['state']) && $address_id['state'] === $state['state'] ? 'selected' : ''; ?>><?php echo $state['state']; ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                        </p>
+                    <p>
+                        <label for="shipCity">City:</label>
+                        <input type="text" id="shipCity" name="shipCity" value="<?php echo isset($shipCity) ? $shipCity : ''; ?>">
+                    </p>
 
-                        <p>
-                            <label for="zip_code">Zip Code:</label>
-                            <input type="text" id="zip_code" name="zip_code" value="<?php echo isset($address_id['zip_code']) ? $address_id['zip_code'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="state">State:</label>
+                        <select id="state" name="state">
+                            <?php foreach ($states as $state): ?>
+                                <option value="<?php echo $state['state']; ?>" <?php echo isset($shipState) && $shipState === $state['state'] ? 'selected' : ''; ?>><?php echo $state['state']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </p>
 
-                        <p>
-                            <label for="phone">Phone:</label>
-                            <input type="text" id="phone" name="phone" value="<?php echo isset($address_id['phone']) ? $address_id['phone'] : ''; ?>">
-                        </p>
+                    <p>
+                        <label for="shipZip">Zip Code:</label>
+                        <input type="text" id="shipZip" name="shipZip" value="<?php echo isset($shipZip) ? $shipZip : ''; ?>">
+                    </p>
 
-                        <span>
-                            <a href="index.php?action=update_customer_info">
-                                <button type="button">Update Billing Information</button>
-                            </a>
-                        </span>
+                    <p>
+                        <label for="shipPhone">Phone:</label>
+                        <input type="text" id="shipPhone" name="shipPhone" value="<?php echo isset($shipPhone) ? $shipPhone : ''; ?>">
+                    </p>
+
+                    <span>
+                        <a href="index.php?action=update_customer_info">
+                            <button type="button">Update Shipping Information</button>
+                        </a>
+                    </span>
                     </form>
                 </div>
             </section>

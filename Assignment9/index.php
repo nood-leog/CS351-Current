@@ -43,13 +43,43 @@ if ($action === 'home') {
     $customerInfo = get_customer_info_by_email_address($emailInput);
 
     if (!empty($customerInfo)) {
-        $cuEmail = $customerInfo[0];
-        $states = get_states();
-        $customer_id = $cuEmail['customer_id'];
-        $customer = get_customer_info($customer_id);
-        $address_id = get_address($customer_id);
+        $cuEmail = $customerInfo[0]; //works
+        $states = get_states(); //works
 
-        
+        $customer_id = $cuEmail['customer_id']; //works
+        $billing_id = $cuEmail['billing_address_id']; //works
+        $shipping_id = $cuEmail['shipping_address_id']; //works
+
+
+        $shipID = get_address($shipping_id);
+        $billID = get_address($billing_id);
+
+        //line1
+        $billLine1 = isset($billID['line1']) ? $billID['line1'] : 'N/A';
+        //line2
+        $billLine2 = isset($billID['line2']) ? $billID['line2'] : 'N/A';
+        //city
+        $billCity = isset($billID['city']) ? $billID['city'] : 'N/A';
+        //state
+        $billState = isset($billID['state']) ? $billID['state'] : 'N/A';
+        //zipcode
+        $billZip = isset($billID['zip_code']) ? $billID['zip_code'] : 'N/A';
+        //phone
+        $billPhone = isset($billID['phone']) ? $billID['phone'] : 'N/A';
+     
+        //line1
+        $shipLine1 = isset($shipID['line1']) ? $shipID['line1'] : 'N/A';
+        //line2
+        $shipLine2 = isset($shipID['line2']) ? $shipID['line2'] : 'N/A';
+        //city
+        $shipCity = isset($shipID['city']) ? $shipID['city'] : 'N/A';
+        //state
+        $shipState = isset($shipID['state']) ? $shipID['state'] : 'N/A';
+        //zipcode
+        $shipZip = isset($shipID['zip_code']) ? $shipID['zip_code'] : 'N/A';
+        //phone
+        $shipPhone = isset($shipID['phone']) ? $shipID['phone'] : 'N/A';
+
         include('./customer/customer.php');
     } else {
         include('./customer/customer_login.php');
