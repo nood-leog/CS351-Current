@@ -1,0 +1,45 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    background-image: url("../images/exam.png");
+    background-color: lightblue;
+}
+
+body  {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    width: 800px;
+    background-color: white;
+    margin: 50px auto;
+    border: 2px solid black;
+    box-shadow: 0 10px 10px 10px gray;
+}
+
+
+
+header h1 {
+    font-size: 300%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 10px auto;
+}
+
+
+p {
+    font-size: 200%;
+    font-weight: bold;
+    text-align:center;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: green;
+}
+a:hover, a:focus {
+    color: crimson;
+}
+
+
+
